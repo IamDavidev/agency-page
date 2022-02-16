@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;1,600&family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 18px;
+}
+header {
+  background-image: url(./assets/desktop/image-header.jpg);
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  & h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    & li {
+      margin: 0 1rem;
+    }
+  }
+}
