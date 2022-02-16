@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Fraunces', serif;
   font-size: 18px;
 }
 header {
@@ -60,6 +60,100 @@ nav {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.transform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & h1 {
+    padding: 1rem 4rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: hsl(213, 27%, 19%);
+  }
+  & p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(213, 9%, 39%);
+    text-align: left;
+    padding: 1rem 4rem;
+  }
+}
+
+.ctn {
+  width: 100%;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.eggs {
+  background-image: url(./assets/desktop/image-transform.jpg);
+}
+.stand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & h1 {
+    padding: 1rem 4rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: hsl(213, 27%, 19%);
+  }
+  & p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(213, 9%, 39%);
+    text-align: left;
+    padding: 1rem 4rem;
+  }
+}
+
+.cup {
+  background-image: url(./assets/desktop/image-stand-out.jpg);
+}
+.graphic {
+  background-image: url(./assets/desktop/image-graphic-design.jpg);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(167, 40%, 24%);
+  padding: 1rem 3rem;
+  text-align: center;
+  & h1 {
+    margin: 1rem 0;
+    font-weight: 900;
+  }
+  & p {
+    font-family: 'Barlow', sans-serif;
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+}
+.photography {
+  background-image: url(./assets/desktop/image-photography.jpg);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(198, 62%, 26%);
+  padding: 1rem 3rem;
+  text-align: center;
+  & h1 {
+    margin: 1rem 0;
+    font-weight: 900;
+  }
+  & p {
+    font-family: 'Barlow', sans-serif;
+    padding: 1rem 0rem;
+    line-height: 1.5;
+  }
 }
 
 @keyframes life {
