@@ -24,10 +24,24 @@ header {
   color: #fff;
   & h1 {
     font-family: 'Fraunces', serif;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 900;
     margin: 0;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-top: 8rem;
+  }
+  & span {
+    display: flex;
+    width: 100%;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    & img {
+      animation: life 2s infinite;
+    }
   }
 }
 nav {
@@ -41,5 +55,21 @@ nav {
     & li {
       margin: 0 1rem;
     }
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@keyframes life {
+  0% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(12px);
   }
 }
